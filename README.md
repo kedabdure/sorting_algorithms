@@ -1,1 +1,1 @@
-this project is all about implementing different s0rting algorithm
+this project is all about implementing different sorting algorithm
