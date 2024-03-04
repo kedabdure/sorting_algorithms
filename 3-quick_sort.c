@@ -10,10 +10,10 @@
 int partition(int *array, int start, int end, size_t size)
 {
     int tmp;
-    int piv = array[start];
+    int piv = array[end];
     int left = start, right = end;
 
-    while (left < right)
+    while (left <= right)
     {
         while (array[left] <= piv)
             left++;
@@ -26,7 +26,6 @@ int partition(int *array, int start, int end, size_t size)
             tmp = array[left];
             array[left] = array[right];
             array[right] = tmp;
-            print_array(array, size);
         }
 
     }
